@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row" style="padding-top:100px">
+    <div class="row justify-content-center">
+      <div class="col-8 p-3">
+          <h1 class="text-center">All-Styles Archive</h1>
+          <p class="fs-5 text-center">
+            Where words fail to express, let your dance speak.
+          </p>
+          <p class="text-center">
+              <a href="create.html" class="btn btn-secondary">Upload New Video</a>
+              <a href="{% url 'user_public_timeline' %}" target="_blank" class="btn btn-outline-secondary">View My Public Profile</a>
+
+          </p>
+      </div>
+
+      <div class="col-12">
+      <div class="album py-5">
+        <div class="container">
+          <!-- Albums Grouped by Month -->
+          <p class="fs-4">2023 September</p>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <figure class="figure figure-story">
+                  <video src="../assets/media/demo4.mp4" class="figure-img img-fluid" controls></video>
+              </figure>
+                <div class="card-body">
+                  <p class="card-text">
+                    <span style="font-weight: 400;">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                      content is a little bit longer.</span>
+
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>
+                    </div>
+                    <small class="text-muted">1,000 views</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <div class="card-body">
+                  <figure class="figure figure-story">
+                    <video src="../assets/media/demo2.mp4" class="figure-img img-fluid" controls></video>
+                </figure>
+                  <p class="card-text">
+                    <strong>Title 2.</strong>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>
+                    </div>
+                    <small class="text-muted">1,000 views</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <figure class="figure figure-story">
+                  <video src="../assets/media/demo3.mp4" class="figure-img img-fluid" controls></video>
+              </figure>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Title 3.</strong>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>
+                    </div>
+                    <small class="text-muted">1,000 views</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Albums Grouped by Month -->
+          <p class="fs-4">2023 August</p>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <figure class="figure figure-story">
+                  <video src="../assets/media/demo1.mp4" class="figure-img img-fluid" controls></video>
+              </figure>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Title 1.</strong>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>
+                    </div>
+                    <small class="text-muted">1,000 views</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <figure class="figure figure-story">
+                  <video src="../assets/media/demo2.mp4" class="figure-img img-fluid" controls></video>
+              </figure>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Title 2.</strong>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>
+                    </div>
+                    <small class="text-muted">1,000 views</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <figure class="figure figure-story">
+                  <video src="../assets/media/demo3.mp4" class="figure-img img-fluid" controls></video>
+              </figure>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Title 3.</strong>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>
+                    </div>
+                    <small class="text-muted">1,000 views</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    {% endblock %}

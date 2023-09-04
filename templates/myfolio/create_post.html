@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row" style="padding-top:100px">
+    <div class="col-md-6">
+
+        <h1>Upload Performance</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Title</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    required>
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label" for="customFile">Upload Video (Max of 60s)</label>
+                <input type="file" class="form-control" id="customFile">
+            </div>
+            <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>(Type of Performance)</option>
+                <option value="1">Choreographed by Someone Else</option>
+                <option value="2">Choreographed by Me</option>
+                <option value="3">Improvised </option>
+                <option value="4">Stage Performance</option>
+                <option value="4">Practice</option>
+              </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Caption (Public description of the dance)</label>
+                <textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" height="50px"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">How much of this performance is new to you?</label>
+                <textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" height="50px"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Describe Music (If none, leave it blank)</label>
+                <textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" height="50px"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">How did you feel about this dance?</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <p>If none, leave it blank</p>
+            </div>
+
+            <fieldset class="mb-3">
+                <legend>Describe</legend>
+                <div class="form-check">
+                  <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
+                  <label class="form-check-label" for="exampleRadio1" value="1">Low</label>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
+                  <label class="form-check-label" for="exampleRadio2" value="5">High</label>
+                </div>
+              </fieldset>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+{% endblock %}

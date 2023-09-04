@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center" style="padding-top:100px">
+            <div class="col-8 p-3">
+                <h1 class="text-center">Kaye's Style Highlights</h1>
+                <p class="fs-5 text-center">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. I am inspired by contemporary.
+                </p>
+                <p class="text-center">
+                    <a href="create.html" class="btn btn-secondary">Style Highlights</a>
+                    <a href="profile_collection.html" class="btn btn-outline-secondary">View My Collection</a>
+                    <a href="create.html" class="btn btn-outline-secondary">Contact Me</a>
+
+                </p>
+            </div>
+
+            <div class="col-md-12">
+
+
+                <ul class="choreo-timeline">
+
+
+                    <li style="--accent-color:#d6d6da">
+                        <div class="card" style="background:var(--accent-color); border-color:var(--accent-color)">
+                            <small class="date">01 SEP 2023 • PRACTICE </small>
+                            <figure class="figure figure-story">
+                                <video src="../assets/media/demo4.mp4" class="figure-img img-fluid" controls></video>
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Whites and Jeans</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.<br />
+
+                                    <small>🎵 Groovy and funky mix by a friend</small><br />
+
+                                    <small>💡 Inspired by feeling loved</small>
+                                </p>
+                                <a href="#" class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-chat-heart"></i>
+                                    Leave a Feedback</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li style="--accent-color:#d1d0c9">
+
+                        <div class="card" style="background:var(--accent-color); border-color:var(--accent-color)">
+                            <small class="date">01 SEP 2023 • PRACTICE </small>
+                            <figure class="figure figure-story">
+                                <video src="../assets/media/demo3.mp4" class="figure-img img-fluid" controls></video>
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Whites and Jeans</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.<br />
+
+                                    <small>🎵 Groovy and funky mix by a friend</small><br />
+
+                                    <small>💡 Inspired by feeling loved</small>
+                                </p>
+                                <a href="#" class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-chat-heart"></i>
+                                    Leave a Feedback</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li style="--accent-color:#f5d75d">
+
+                        <div class="card" style="background:var(--accent-color); border-color:var(--accent-color)">
+                            <small class="date">01 SEP 2023 • PRACTICE </small>
+                            <figure class="figure figure-story">
+                                <video src="../assets/media/demo2.mp4" class="figure-img img-fluid" controls></video>
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Whites and Jeans</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.<br />
+
+                                    <small>🎵 Groovy and funky mix by a friend</small><br />
+
+                                    <small>💡 Inspired by feeling loved</small>
+                                </p>
+                                <a href="#" class="btn btn-secondary btn-sm">
+                                    <i class="bi bi-chat-heart"></i>
+                                    Leave a Feedback</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+
+
+                </ul>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {% endblock %}

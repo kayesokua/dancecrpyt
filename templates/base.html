@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include "head.html" %}
+</head>
+<body>
+  {% include "navheader.html" %}
+  <main class="container">
+
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include "scripts.html" %}
+</body>
+</html>
